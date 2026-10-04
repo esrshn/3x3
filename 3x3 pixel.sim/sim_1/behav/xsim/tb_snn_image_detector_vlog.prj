@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" \
+"../../../../3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

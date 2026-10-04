@@ -1,0 +1,7 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv,1786900933,systemVerilog,,,,tb_snn_image_detector,,uvm,,,,,,
+C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv,1785945588,systemVerilog,,C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv,,snn_image_detector,,uvm,,,,,,

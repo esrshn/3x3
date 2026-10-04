@@ -1,0 +1,22 @@
+Time resolution is 1 ps
+
+========================================
+TEST 1: UST KENAR GURTUSI (3x3 Matris)
+========================================
+[ 50] [ 50] [ 50]
+[  0] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP DURUMU: 1
+========================================
+
+
+========================================
+TEST 2: SOL UST KOSE GORUNTUSI (3x3 Matris)
+========================================
+[ 60] [ 30] [  0]
+[ 30] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP_LEFT DURUMU: 1
+========================================
+
+$finish called at time : 230 ns : File "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" Line 85

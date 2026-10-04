@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log snn_image_detector.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source snn_image_detector.tcl -notrace
+

@@ -1,0 +1,250 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Aug  5 22:33:11 2026
+# Process ID         : 15176
+# Current directory  : C:/3x3 pixel
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9436 C:\3x3 pixel\3x3 pixel.xpr
+# Log file           : C:/3x3 pixel/vivado.log
+# Journal file       : C:/3x3 pixel\vivado.jou
+# Running On         : ARTOO
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13650HX
+# CPU Frequency      : 2803 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16780 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27517 MB
+# Available Virtual  : 10955 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/3x3 pixel/3x3 pixel.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/3x3 pixel/3x3 pixel.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1224.602 ; gain = 111.535
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_snn_image_detector'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_snn_image_detector' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_snn_image_detector_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_snn_image_detector
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" Line 1. Module snn_image_detector doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" Line 1. Module snn_image_detector doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.snn_image_detector
+Compiling module xil_defaultlib.tb_snn_image_detector
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_snn_image_detector_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_snn_image_detector_behav -key {Behavioral:sim_1:Functional:tb_snn_image_detector} -tclbatch {tb_snn_image_detector.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_snn_image_detector.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 230 ns : File "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" Line 60
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_snn_image_detector_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1259.371 ; gain = 14.312
+save_wave_config {C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}}
+set_property xsim.view {{C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_snn_image_detector'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_snn_image_detector' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_snn_image_detector_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module snn_image_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_snn_image_detector
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" Line 1. Module snn_image_detector doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/3x3 pixel/3x3 pixel.srcs/sources_1/new/snn_image_detector.sv" Line 1. Module snn_image_detector doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.snn_image_detector
+Compiling module xil_defaultlib.tb_snn_image_detector
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_snn_image_detector_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_snn_image_detector_behav -key {Behavioral:sim_1:Functional:tb_snn_image_detector} -tclbatch {tb_snn_image_detector.tcl} -view {{C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config {C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}
+source tb_snn_image_detector.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+========================================
+TEST 1: UST KENAR GURTUSI (3x3 Matris)
+========================================
+[ 50] [ 50] [ 50]
+[  0] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP DURUMU: 1
+========================================
+
+
+========================================
+TEST 2: SOL UST KOSE GORUNTUSI (3x3 Matris)
+========================================
+[ 60] [ 30] [  0]
+[ 30] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP_LEFT DURUMU: 1
+========================================
+
+$finish called at time : 230 ns : File "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" Line 87
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_snn_image_detector_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_snn_image_detector'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_snn_image_detector' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_snn_image_detector_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_snn_image_detector_behav xil_defaultlib.tb_snn_image_detector xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/3x3 pixel/3x3 pixel.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_snn_image_detector_behav -key {Behavioral:sim_1:Functional:tb_snn_image_detector} -tclbatch {tb_snn_image_detector.tcl} -view {{C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config {C:/3x3 pixel/tb_snn_image_detector_behav.wcfg}
+source tb_snn_image_detector.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+
+========================================
+TEST 1: UST KENAR GURTUSI (3x3 Matris)
+========================================
+[ 50] [ 50] [ 50]
+[  0] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP DURUMU: 1
+========================================
+
+
+========================================
+TEST 2: SOL UST KOSE GORUNTUSI (3x3 Matris)
+========================================
+[ 60] [ 30] [  0]
+[ 30] [  0] [  0]
+[  0] [  0] [  0]
+SPIKE_TOP_LEFT DURUMU: 1
+========================================
+
+$finish called at time : 230 ns : File "C:/3x3 pixel/3x3 pixel.srcs/sim_1/new/tb_snn_image_detector.sv" Line 87
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_snn_image_detector_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2319.000 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  6 08:23:35 2026...
